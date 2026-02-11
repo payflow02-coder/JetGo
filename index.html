@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JetGo - Курьер сервис</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>JETGO</h1>
+    <p>Жеткізу сервисі | Баға келісу</p>
+</header>
+
+<section class="order-section">
+    <h2>Тапсырыс беру</h2>
+
+    <form id="orderForm">
+        <input type="text" id="name" placeholder="Атыңыз" required>
+        <input type="text" id="from" placeholder="Қай жерден" required>
+        <input type="text" id="to" placeholder="Қай жерге" required>
+        <input type="number" id="distance" placeholder="Қашықтық (км)" required>
+        <button type="submit">Тапсырыс беру</button>
+    </form>
+
+    <div id="result" class="result-box"></div>
+</section>
+
+<section class="orders">
+    <h2>Соңғы тапсырыстар</h2>
+    <div id="ordersList"></div>
+</section>
+
+<footer>
+    <a href="admin.html">Админ панель</a>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
